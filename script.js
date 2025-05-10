@@ -3,7 +3,7 @@ const input = document.querySelector("#input");
 const toDoList = document.querySelector("#todo_list");
 const resetButton = document.querySelector("#reset_button");
 
-// When task is added
+// When a task is added
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const newListItem = document.createElement("li");
