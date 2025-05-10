@@ -1,0 +1,202 @@
+body {
+  font-family: "Architects Daughter";
+  background-color: #eafdf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading Section */
+
+header#header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1#name {
+  font-family: "Indie Flower";
+  font-size: 3em;
+  color: #8f717d;
+  margin: 0;
+  justify-self: center;
+}
+
+section#instructions {
+  line-height: 0.2em;
+}
+
+section#instructions p {
+  color: #8f9b98;
+  margin-top: 0;
+}
+
+/* Main Section */
+
+main#main_section {
+  background-color: #e5e9ec;
+  border: 2px dashed #ddcad9;
+  border-radius: 0.5em;
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#form_section {
+  margin-top: 1em;
+  padding-top: 0.8em;
+  display: flex;
+}
+
+input#input {
+  font-family: "Verdana";
+  padding: 5px;
+  color: #7c616c;
+  border: 2px solid #eddeea;
+  border-radius: 0.6em;
+  width: 175px;
+  height: 1.8em;
+}
+input::placeholder {
+  font-family: "Architects Daughter";
+  font-size: 1em;
+  opacity: 0.3;
+}
+
+ul#todo_list {
+  color: #91727f;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+li#task {
+  position: relative;
+  list-style-type: none;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px dashed #ddcad9;
+  border-radius: 0.3em;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 0.3em;
+  transition: top ease 0.5s;
+}
+
+/* Buttons */
+
+button#add_task {
+  cursor: pointer;
+  font-family: "Architects Daughter";
+  font-size: 1.3em;
+  background-color: #dfcedb;
+  color: #7c616c;
+  border: 2px dashed #cbb6c6;
+  border-radius: 0.4em;
+}
+button#add_task:active {
+  background-color: #e3d1df;
+}
+
+#delete_button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0.3em;
+  opacity: 0.3;
+  pointer-events: auto;
+}
+#delete_button:hover {
+  opacity: 0.4;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#recycle_button {
+  opacity: 0.5;
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  margin: 0.3em;
+  pointer-events: auto;
+}
+#recycle_button:hover {
+  opacity: 0.9;
+}
+
+button#reset_button {
+  cursor: pointer;
+  font-family: "Architects Daughter";
+  font-size: 1.3em;
+  background-color: #ddede8;
+  color: #7c616c;
+  border: 2px dashed #ddcad9;
+  border-radius: 0.4em;
+  margin: 10px;
+}
+button#reset_button:hover {
+  border: 2px dashed #d1b1cb;
+  transition: 0.1s;
+  transform: translatey(3px);
+}
+
+/* Classes */
+
+.active:hover {
+  transition: 0.1s;
+  transform: translatey(3px);
+}
+
+.hidden {
+  display: none;
+}
+
+.grayed-out {
+  opacity: 0.4;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 710px) {
+  input#input {
+    margin-bottom: 1em;
+  }
+
+  button#add_todo {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 790px) {
+  main#main_section {
+    width: 75%;
+  }
+
+  section#instructions p {
+    text-wrap: balance;
+    line-height: 1em;
+  }
+
+  form#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input#input {
+    margin-bottom: 1em;
+  }
+
+  button#add_todo {
+    margin-top: 8px;
+  }
+}
