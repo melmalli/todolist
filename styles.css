@@ -107,11 +107,11 @@ button#add_task:active {
   bottom: 0;
   right: 0;
   margin: 0.3em;
-  opacity: 0.3;
+  opacity: 0.4;
   pointer-events: auto;
 }
 #delete_button:hover {
-  opacity: 0.4;
+  opacity: 0.6;
   cursor: pointer;
   pointer-events: auto;
 }
@@ -198,5 +198,9 @@ button#reset_button:hover {
 
   button#add_todo {
     margin-top: 8px;
+  }
+
+  li#task {
+    font-size: 1.3em;
   }
 }
