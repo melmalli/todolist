@@ -165,17 +165,13 @@ button#reset_button:hover {
 
 /* Media Queries */
 
-@media (max-width: 710px) {
-  input#input {
-    margin-bottom: 1em;
-  }
-
-  button#add_todo {
-    margin-top: 8px;
+@media (max-width: 945px) {
+  li#task {
+    font-size: 1.3em;
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 831px) {
   main#main_section {
     width: 75%;
   }
@@ -202,5 +198,33 @@ button#reset_button:hover {
 
   li#task {
     font-size: 1.3em;
+  }
+
+  @media (max-width: 710px) {
+    input#input {
+      margin-bottom: 1em;
+    }
+
+    button#add_todo {
+      margin-top: 8px;
+    }
+
+    li#task {
+      font-size: 1.3em;
+    }
+  }
+
+  @media (max-width: 560px), (max-height: 590) {
+    input#input {
+      margin-bottom: 1em;
+    }
+
+    button#add_todo {
+      margin-top: 8px;
+    }
+
+    li#task {
+      font-size: 1em;
+    }
   }
 }
